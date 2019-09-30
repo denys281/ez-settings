@@ -1,9 +1,17 @@
+GIT
+  remote: git://github.com/denys281/cells-slim.git
+  revision: 1d64d6b14db596fddc40a219a1624556d675f711
+  branch: update-slim-v0.0.6
+  specs:
+    cells-slim (0.0.6)
+      cells (>= 4.0.1, < 6.0.0)
+      slim (>= 3.0)
+
 PATH
   remote: .
   specs:
     ez-settings (0.3.0)
       cells-rails (~> 0.0.8)
-      cells-slim (~> 0.0.5)
       ez-core (~> 0.1.1)
       rails (>= 5.0.0)
       redis (~> 3.0)
@@ -68,9 +76,6 @@ GEM
     cells-rails (0.0.9)
       actionpack (>= 3.0)
       cells (>= 4.1.6, < 5.0.0)
-    cells-slim (0.0.6)
-      cells (>= 4.0.1, < 6.0.0)
-      slim (~> 3.0)
     coderay (1.1.1)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
@@ -90,7 +95,7 @@ GEM
     generator_spec (0.9.4)
       activesupport (>= 3.0.0)
       railties (>= 3.0.0)
-    globalid (0.4.1)
+    globalid (0.4.2)
       activesupport (>= 4.2.0)
     guard (2.14.1)
       formatador (>= 0.2.4)
@@ -124,11 +129,11 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_mime (1.0.1)
+    mini_mime (1.0.2)
     mini_portile2 (2.3.0)
     minitest (5.10.2)
     nenv (0.3.0)
-    nio4r (2.3.1)
+    nio4r (2.5.2)
     nokogiri (1.8.3)
       mini_portile2 (~> 2.3.0)
     notiffany (0.1.1)
@@ -195,7 +200,7 @@ GEM
     rspec-support (3.6.0)
     ruby_dep (1.5.0)
     shellany (0.0.1)
-    simple_form (4.0.1)
+    simple_form (5.0.0)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
     simplecov (0.14.1)
@@ -203,9 +208,9 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.1)
-    slim (3.0.9)
+    slim (4.0.1)
       temple (>= 0.7.6, < 0.9)
-      tilt (>= 1.3.3, < 2.1)
+      tilt (>= 2.0.6, < 2.1)
     slop (3.6.0)
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
@@ -215,7 +220,7 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.3.13)
-    temple (0.8.0)
+    temple (0.8.2)
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.8)
@@ -224,7 +229,7 @@ GEM
     uber (0.1.0)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.3)
+    websocket-extensions (0.1.4)
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
@@ -233,6 +238,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  cells-slim!
   ez-settings!
   faker
   fakeredis
@@ -245,4 +251,4 @@ DEPENDENCIES
   sqlite3
 
 BUNDLED WITH
-   1.16.6
+   1.17.2
